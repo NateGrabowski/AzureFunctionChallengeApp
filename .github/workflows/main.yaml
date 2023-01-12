@@ -17,8 +17,8 @@ jobs:
       - name: Run ARM deploy
         uses: azure/arm-deploy@v1
         with:
-          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-          resourceGroupName: ${{ secrets.AZURE_RG }}
+          subscriptionId: 698196fb-891d-430a-a764-e320950df9dc
+          resourceGroupName: AzureChallengeGitHubActionsRG
           template: ./azuredeploy.json
           parameters: storageAccountType=Standard_LRS
 
